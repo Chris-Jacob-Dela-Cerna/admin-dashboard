@@ -1,0 +1,33 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+.container {
+  min-height: 100vh;
+
+  display: grid;
+  grid-template-columns: 1fr 1.6fr 1fr;
+  grid-template-areas: "panel panel panel";
+}
+
+.panel {
+  background-color: rgb(236, 236, 200);
+
+  padding: 1.2rem;
+}
+
+.panel.center {
+  background-color: rgb(255, 233, 203);
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+
+  height: 200vh;
+}
+
+.panel > .text-box {
+  text-align: justify;
+}
