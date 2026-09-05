@@ -16,7 +16,9 @@
 
 .panel {
   background-color: rgb(236, 236, 200);
+}
 
+.panel > .text-box {
   padding: 1.2rem;
 }
 
@@ -28,6 +30,9 @@
   height: 200vh;
 }
 
-.panel > .text-box {
+.panel:not(.center) > .text-box {
   text-align: justify;
+
+  position: sticky;
+  top: 0;
 }
