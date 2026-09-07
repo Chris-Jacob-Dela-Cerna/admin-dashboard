@@ -82,85 +82,92 @@
       <div class="workspace__main panel">
         <main class="main-content">
           <!--  Hidden H1  -->
-          <h1> Main Content Overview </h1>
+          <h1 class="main-content__title visually-hidden"> Main Content Overview </h1>
 
           <!--  Header  -->
-          <section>
-            <search></search>
-            <nav></nav>
+          <section class="header">
+            <search class="search-bar"></search>
+            <nav class="nav-bar"></nav>
           </section>
 
           <!--  Dashboard  -->
-          <section>
-            <h2> Dashboard </h2>
-            <button> Upload File </button>
-            <div>
-              <div>
-                <h3> Good to see you, User </h3>
-                <p> You're almost out of space. Upgrade to 500 GB and keep everything in one place. </p>
-                <button> Upgrade </button>
+          <section class="dashboard">
+            <h2 class="section-heading"> Dashboard </h2>
+            <button class="dashboard-btn"> Upload File </button>
+            <div class="promo-banner">
+              <div class="promo-banner__text-wrapper">
+                <h3 class="promo-banner__heading"> Good to see you, User </h3>
+                <p class="promo-banner__text"> You're almost out of space. Upgrade to 500 GB and keep everything in one place. </p>
+                <button class="promo-banner__btn"> Upgrade </button>
               </div>
-              <img>
+              <img class="promo-banner__img">
             </div>
           </section>
 
           <!--  Folders  -->
-          <section>
-            <h2>Folders</h2>
-            <p><a> View All </a></p>
-            <div>
-              <div>
-                <img>
-                <h3> Work Documents </h3>
-                <p> 74 files</p>
+          <section class="folders">
+            <h2 class="section__heading">Folders</h2>
+            <p class="folders__link-wrapper">
+              <a class="link-more"> View All </a>
+            </p>
+            <div class="folders__wrapper">
+              <div class="folder">
+                <img class="folder__icon">
+                <h3 class="folder__name"> Work Documents </h3>
+                <p class="folder__file-count"> 74 files</p>
               </div>
               <div>
-                <img>
-                <h3> Kuwait 2026 Tour </h3>
-                <p> 57 files </p>
+                <img class="folder__icon">
+                <h3 class="folder__name"> Kuwait 2026 Tour </h3>
+                <p class="folder__file-count"> 57 files </p>
               </div>
               <div>
-                <img>
-                <h3> Family Memories </h3>
-                <p> 348 files </p>              
+                <img class="folder__icon">
+                <h3 class="folder__name"> Family Memories </h3>
+                <p class="folder__file-count"> 348 files </p>              
               </div>
             </div>
           </section>
 
           <!--  Recent Files  -->
-          <section>
-            <h2> Recent Files </h2>
-            <p><a> View All </a></p>
-            <div>
-              <p> Name </p>
-              <p> Size </p>
-              <p> Last Modified </p>
-            </div>
-            <div>
-              <div>
-                <img>
-                <p> user_savings.xls </p>
+          <section class="recent-files">
+            <h2 class="section-heading"> Recent Files </h2>
+            <p class="recent-files__link-wrapper">
+              <a class="link-more"> View All </a>
+            </p>
+            <div class="file">
+              <div class="file__name-wrapper">
+                <img class="file__icon">
+                <p class="file__name"> Name </p>
               </div>
-              <p> 0.78 MB </p>
-              <p> 13:04:22 - Sep 6 2026 </p>
+              <p class="file__size"> Size </p>
+              <p class="file__last-mod"> Last Modified </p>
+            </div>
+            <div class="file">
+              <div class="file__name-wrapper">
+                <img class="file__icon">
+                <p class="file__name"> user_savings.xls </p>
+              </div>
+              <p class="file__size"> 0.78 MB </p>
+              <p class="file__last-mod"> 13:04:22 - Sep 6 2026 </p>
               <img>
             </div>
-            <div>
-              <div>
-                <img>
-                <p> seminar_report.docs </p>
+            <div class="file">
+              <div class="file__name-wrapper">
+                <img class="file__icon">
+                <p class="file__name"> seminar_report.docs </p>
               </div>
-              <p> 2.33 MB </p>
-              <p> 09:14:34 - Sep 6 2026 </p>
+              <p class="file__size"> 2.33 MB </p>
+              <p class="file__last-mod"> 09:14:34 - Sep 6 2026 </p>
               <img>
             </div>
-            <div>
-              <div>
-                <img>
-                <p> seminar_presentation.ppt </p>
+            <div class="file">
+              <div class="file__name-wrapper">
+                <img class="file__icon">
+                <p class="file__name"> seminar_presentation.ppt </p>
               </div>
-              <p> 6.7 MB </p>
-              <p> 19:27:01 - Sep 5 2026 </p>
+              <p class="file__size"> 6.7 MB </p>
+              <p class="file__last-mod"> 19:27:01 - Sep 5 2026 </p>
               <img>
             </div>
           </section>
