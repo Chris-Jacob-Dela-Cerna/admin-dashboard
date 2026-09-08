@@ -3,3 +3,20 @@
   margin: 0;
   padding: 0;
 }
+
+
+
+.workspace {
+  min-height: 100vh;
+
+  display: grid;
+  grid-template-columns: minmax(160px, 340px) minmax(340px, 1fr) minmax(160px, 340px);
+}
+
+.panel {
+  background-color: rgb(255, 243, 224);
+}
+
+.workspace__main {
+  background-color: azure;
+}
