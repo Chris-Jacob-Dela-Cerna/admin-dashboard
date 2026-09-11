@@ -50,15 +50,17 @@
   background-color: rgb(176, 166, 149);
 }
 
-.workspace__navigation,
-.workspace__details {
-  padding: 1rem 1.4rem;
-}
-
 .workspace__main {
   padding: 1.4rem 0;
 }
 
+.workspace__navigation > .nav-sidebar,
+.workspace__details > .details-sidebar {
+  padding: 1rem 1.4rem;
+
+  position: sticky;
+  top: 0;
+}
 
 
 /*  Navigation  */
