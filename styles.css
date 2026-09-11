@@ -203,12 +203,28 @@
 
 
 
-/*  Temporary  
+/*  Utility  */
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  clip-path: inset(50%);
+  white-space: nowrap;
+  border: 0;
+}
+
+
+
+/*  Temporary  */
+/*
 .details-sidebar {
   border: 1px solid rgb(157, 117, 117);
 }
-
 */
 
 .nav-sidebar__link-wrapper,
