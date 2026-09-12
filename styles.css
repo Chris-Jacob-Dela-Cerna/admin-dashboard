@@ -134,6 +134,49 @@
 
 
 
+.main-content > .header {
+  display: flex;
+}
+
+.search-bar__icon {
+  height: 1.5rem;
+  width: 1.5rem;
+}
+
+.search-bar__field {
+  background-color: inherit;
+  border: 0;
+}
+
+.nav-bar {
+  display: flex;
+}
+
+.nav-bar__notification-icon {
+  height: 1.4rem;
+  width: 1.4rem;
+}
+
+.account {
+  display: flex;
+}
+
+.account__icon {
+  height: 1.7rem;
+  width: 1.7rem;
+}
+
+.account__name {
+  font-size: 0.9rem;
+}
+
+.account__more {
+  height: 1.4rem;
+  width: 1.4rem;
+}
+
+
+
 /*  Details  */
 
 .storage {
@@ -242,4 +285,11 @@
 .storage__meter-wrapper,
 .summary__icon {
   border: 1px solid white;
+}
+
+
+
+.main-content > section:not(.header),
+.search-bar__field {
+  border: 1px solid rgb(38, 114, 38);
 }
