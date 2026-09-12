@@ -1,25 +1,26 @@
 @font-face {
-    font-family: 'Noto Sans';
-    src: url('fonts/noto-sans/NotoSans-Regular.woff2') format('woff2'),
-         url('fonts/noto-sans/NotoSans-Regular.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Noto Sans';
-    src: url('fonts/noto-sans/NotoSans-Italic.woff2') format('woff2'),
-         url('fonts/noto-sans/NotoSans-Italic.woff') format('woff');
+    font-family: 'Plus Jakarta Sans';
+    src: url('fonts/plus-jakarta-sans/PlusJakartaSans-Italic.woff2') format('woff2'),
+        url('fonts/plus-jakarta-sans/PlusJakartaSans-Italic.woff') format('woff');
     font-weight: normal;
     font-style: italic;
     font-display: swap;
 }
 
+@font-face {
+    font-family: 'Plus Jakarta Sans';
+    src: url('fonts/plus-jakarta-sans/PlusJakartaSans-Regular.woff2') format('woff2'),
+        url('fonts/plus-jakarta-sans/PlusJakartaSans-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
 
 
 :root {
-  --main-font: 'Noto Sans';
+  --main-font: 'Plus Jakarta Sans';
 
   font-size: 100%;
 }
@@ -130,6 +131,10 @@
   border-radius: 28px;
 
   min-height: 100%;
+}
+
+.section-heading {
+  font-size: 1.2rem;
 }
 
 
@@ -301,7 +306,10 @@
   border: 1px solid white;
 }
 
-
+.search-bar,
+.nav-bar {
+  border: 1px dashed lightgreen;
+}
 
 .main-content > section:not(.header) {
   border: 1px solid rgb(38, 114, 38);
