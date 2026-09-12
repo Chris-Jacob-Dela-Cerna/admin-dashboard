@@ -127,7 +127,7 @@
 
 .workspace__main > .main-content {
   background-color: white;
-  border-radius: 15px;
+  border-radius: 28px;
 
   min-height: 100%;
 }
@@ -135,7 +135,16 @@
 
 
 .main-content > .header {
+  padding: 1.2rem 1.9rem;
+
   display: flex;
+  justify-content: space-between;
+}
+
+.header > .search-bar {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
 }
 
 .search-bar__icon {
@@ -146,10 +155,13 @@
 .search-bar__field {
   background-color: inherit;
   border: 0;
+  font-size: 0.75rem;
 }
 
 .nav-bar {
   display: flex;
+  align-items: center;
+  gap: 0.9rem;
 }
 
 .nav-bar__notification-icon {
@@ -159,6 +171,8 @@
 
 .account {
   display: flex;
+  align-items: center;
+  gap: 0.4rem;
 }
 
 .account__icon {
@@ -167,7 +181,7 @@
 }
 
 .account__name {
-  font-size: 0.9rem;
+  font-size: 0.85rem;
 }
 
 .account__more {
@@ -289,7 +303,6 @@
 
 
 
-.main-content > section:not(.header),
-.search-bar__field {
+.main-content > section:not(.header) {
   border: 1px solid rgb(38, 114, 38);
 }
