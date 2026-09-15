@@ -19,8 +19,9 @@
 
 
 :root {
+  --clr-grey-500: rgb(230, 230, 230);
+  --clr-purple-100: rgb(245, 245, 255);
   --clr-white: rgb(255, 255, 255);
-  --clr-purple-100: rgb(249, 246, 255);
 
   --main-font: 'Plus Jakarta Sans';
 
@@ -75,7 +76,7 @@
 }
 
 .nav-sidebar__others-menu {
-  border-top: 1px solid rgb(53, 53, 53);
+  border-top: 2px solid var(--clr-grey-500);
 }
 
 .nav-sidebar__main-menu, 
@@ -108,7 +109,7 @@
 
 
 .sub-menu {
-  border-left: 1px solid rgb(53, 53, 53);
+  border-left: 2px solid var(--clr-grey-500);
 
   margin-left: 1.6rem;
   padding-left: 1rem;
@@ -123,7 +124,11 @@
 
 .nav-sidebar__link-wrapper,
 .sub-menu__item {
+  border-radius: 15px;
+
   padding: 0.6rem;
+
+  &:hover { background-color: var(--clr-purple-100);}
 }
 
 
@@ -140,7 +145,12 @@
 }
 
 .main-content > .header {
-  padding: 1.2rem 0;
+  background-color: var(--clr-purple-100);
+
+  padding: 1.2rem 0 1rem 0;
+
+  position: sticky;
+  top: 0;
 
   display: flex;
   justify-content: space-between;
@@ -154,7 +164,7 @@
   display: grid;
   align-items: center;
   grid-template: 2.5rem max-content / 1fr auto;
-  row-gap: 0.3rem;
+  row-gap: 0.5rem;
 }
 
 .section-heading {
@@ -418,8 +428,6 @@
 .nav-sidebar__link-wrapper,
 .nav-sidebar__icon,
 .sub-menu__item {
-  border: 1px dashed rgb(197, 196, 196);
-
   a, p {
     color: rgb(57, 55, 55);
   }
@@ -427,15 +435,15 @@
 
 .nav-sidebar__logo,
 .storage__meter-wrapper,
-.summary__item,
-.summary__icon {
-  border: 1px solid rgb(159, 157, 157);
+.summary__item {
+  border: 1px solid rgb(200, 200, 200);
 }
 
 .search-bar,
 .nav-bar,
-.promo-banner {
-  border: 1px dashed rgb(231, 231, 231);
+.promo-banner,
+.summary__icon {
+  border: 1px dashed rgb(167, 166, 166);
 }
 
 .folder {
