@@ -22,8 +22,9 @@
   --clr-black: rgb(0, 0, 0);
   --clr-black-500: rgb(50, 50, 50);
   --clr-grey-500: rgb(230, 230, 230);
+  --clr-purple: rgb(100, 0, 255);
   --clr-purple-100: rgb(245, 245, 255);
-  --clr-purple-500: rgb(180, 180, 255);
+  --clr-purple-500: rgb(120, 100, 240);
   --clr-white: rgb(255, 255, 255);
 
   --font-main: 'Plus Jakarta Sans';
@@ -127,20 +128,23 @@
 .sub-menu__item {
   border-radius: 15px;
 
+  margin-bottom: 0.2rem;
   padding: 0.6rem;
 
   &:hover { background-color: var(--clr-purple-100);}
 }
 
-.current-link {
-  background-color: var(--clr-purple-100);
-  color: var(--clr-purple-500);
-}
-
 .nav-sidebar__link,
 .sub-menu__link {
-  font-size: 0.9rem;
   color: var(--clr-black-500);
+  font-size: 0.9rem;
+}
+
+.current-link {
+  background-color: var(--clr-purple-100);
+  font-weight: bold;
+
+  a { color: var(--clr-purple); }
 }
 
 
