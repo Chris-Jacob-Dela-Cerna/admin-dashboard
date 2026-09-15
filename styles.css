@@ -18,8 +18,10 @@
 
 
 
-
 :root {
+  --clr-white: rgb(255, 255, 255);
+  --clr-purple-100: rgb(249, 246, 255);
+
   --main-font: 'Plus Jakarta Sans';
 
   font-size: 100%;
@@ -48,7 +50,7 @@
 }
 
 .workspace > .panel {
-  background-color: rgb(176, 166, 149);
+  background-color: var(--clr-white);
 }
 
 .workspace__main {
@@ -62,6 +64,7 @@
   position: sticky;
   top: 0;
 }
+
 
 
 /*  Navigation  */
@@ -128,7 +131,7 @@
 /*  Main Content  */
 
 .workspace__main > .main-content {
-  background-color: white;
+  background-color: var(--clr-purple-100);
   border-radius: 28px;
 
   min-height: 100%;
@@ -146,11 +149,12 @@
 .main-content > .dashboard,
 .main-content > .folders,
 .main-content > .recent-files {
-  margin-bottom: 1rem;
+  margin-bottom: 2.2rem;
 
   display: grid;
-  grid-template: 2.5rem max-content / 1fr auto;
   align-items: center;
+  grid-template: 2.5rem max-content / 1fr auto;
+  row-gap: 0.3rem;
 }
 
 .section-heading {
@@ -180,7 +184,7 @@
   font-size: 0.75rem;
 }
 
-.nav-bar {
+.header > .nav-bar {
   display: flex;
   align-items: center;
   gap: 0.9rem;
@@ -214,6 +218,7 @@
 
 
 .dashboard > .promo-banner {
+  background-color: var(--clr-white);
   border-radius: 16px;
 
   grid-column: 1 / 3;
@@ -250,7 +255,7 @@
 .folder {
   border-radius: 15px;
 
-  padding: 0.8rem;
+  padding: 1rem;
 }
 
 .folder__icons-wrapper {
@@ -258,7 +263,6 @@
 
   display: flex;
   align-items: center;
-  flex-direction: row;
 }
 
 .folder__icon {
@@ -274,11 +278,11 @@
 }
 
 .folder__name {
-  font-size: 0.85rem;
+  font-size: 0.9rem;
 }
 
 .folder__file-count {
-  font-size: 0.7rem;
+  font-size: 0.75rem;
 }
 
 
@@ -296,8 +300,12 @@
   white-space: nowrap;
 
   &:first-child { text-align: start; }
-  &:not(:first-child) { text-align: center; }
-  &:not(:first-child, :last-child) { padding: 0 1rem; }
+  &:last-child { text-align: end; }
+  &:not(:first-child, :last-child) {
+    text-align: center;
+  
+    padding: 0 1rem; 
+  }
 }
 
 .files-table__data {
@@ -305,8 +313,6 @@
 }
 
 .files-table__name-wrapper {
-  padding-left: 0.5rem;
-
   display: flex;
   align-items: center;
   gap: 0.6rem;
@@ -412,10 +418,10 @@
 .nav-sidebar__link-wrapper,
 .nav-sidebar__icon,
 .sub-menu__item {
-  border: 1px dashed white;
+  border: 1px dashed rgb(197, 196, 196);
 
   a, p {
-    color: rgb(250, 250, 250);
+    color: rgb(57, 55, 55);
   }
 }
 
@@ -423,15 +429,15 @@
 .storage__meter-wrapper,
 .summary__item,
 .summary__icon {
-  border: 1px solid white;
+  border: 1px solid rgb(159, 157, 157);
 }
 
 .search-bar,
 .nav-bar,
 .promo-banner {
-  border: 1px dashed lightgreen;
+  border: 1px dashed rgb(231, 231, 231);
 }
 
 .folder {
-  border: 1px solid rgb(207, 237, 207);
+  border: 1px solid rgb(235, 235, 235);
 }
