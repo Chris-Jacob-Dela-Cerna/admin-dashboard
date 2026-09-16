@@ -438,9 +438,18 @@
 }
 
 .files-table__file-row {
-  .files-table__cell:first-child { border-radius: 10px 0 0 10px; }
-  .files-table__cell:last-child { border-radius: 0 10px 10px 0; }
-  .files-table__data:not(:first-child) { color: var(--clr-black-300); }
+  .files-table__cell:first-child { 
+    border-radius: 10px 0 0 10px; 
+    padding-right: 1rem;
+  }
+  .files-table__cell:last-child { 
+    border-radius: 0 10px 10px 0; 
+    padding-left: 1rem;
+  }
+  .files-table__data:not(:first-child) { 
+    color: var(--clr-black-300);
+    padding: 0 1rem; 
+  }
   &:hover {
     background-color: var(--clr-white);
     border-color: var(--clr-white);
@@ -486,9 +495,29 @@
 }
 
 .storage__meter-container {
+  background-color: var(--clr-purple-100);
   border-radius: 10px;
+  cursor: pointer;
 
   height: 4rem;
+
+  display: flex;
+  justify-content: center;
+}
+
+.storage__meter {
+  font-size: 0.8rem;
+  letter-spacing: 0.03rem;
+  text-align: center;
+
+  height: 1.5rem;
+  width: 90%;
+
+  margin-top: 0.66rem;
+
+  &:after {
+    content: attr(value) " GB / " attr(max) " GB";
+  }
 }
 
 
@@ -560,7 +589,7 @@
 
 /*  Temporary  */
 
-.storage__meter-wrapper {
+.storage__meter-container {
   border: 1px solid rgb(200, 200, 200);
 }
 
