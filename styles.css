@@ -21,6 +21,7 @@
 :root {
   --clr-black: rgb(0, 0, 0);
   --clr-black-500: rgb(50, 50, 50);
+  --clr-black-tinted: rgb(0, 0, 0, 0.5);
   --clr-grey-500: rgb(230, 230, 230);
   --clr-grey-600: rgb(215, 215, 215);
   --clr-purple: rgb(100, 0, 255);
@@ -28,7 +29,7 @@
   --clr-purple-400: rgb(160, 140, 240);
   --clr-purple-500: rgb(120, 100, 240);
   --clr-white: rgb(255, 255, 255);
-  --clr-yellow-500: rgb(255, 255, 110);
+  --clr-yellow-600: rgb(240, 235, 25);
 
   --font-main: 'Plus Jakarta Sans';
 
@@ -285,20 +286,25 @@
   padding: 0.7rem 1.8rem;
 
   &:hover { background-color: var(--clr-purple-400); }
-  &:active { color: var(--clr-yellow-500); }
+  &:active { color: var(--clr-yellow-600); }
 }
 
 .promo-banner__bg-credit {
-  color: var(--clr-black-500);
+  background-color: var(--clr-black-tinted);
+  border-bottom-right-radius: 12px;
+  border-top-left-radius: 12px;
+  color: var(--clr-white);
   font-size: 0.7rem;
 
+  padding: 0.2rem 0.6rem;
+
   position: absolute;
-  right: 12px;
-  bottom: 6px;
+  right: 0;
+  bottom: 0;
 }
 
 .promo-banner__bg-link {
-  color: var(--clr-purple);
+  color: var(--clr-yellow-600);
 }
 
 
