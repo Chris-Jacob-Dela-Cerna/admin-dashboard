@@ -257,6 +257,8 @@
 
   grid-column: 1 / 3;
   padding: 1.5rem 1.8rem;
+
+  position: relative;
 }
 
 .promo-banner__heading {
@@ -284,6 +286,19 @@
 
   &:hover { background-color: var(--clr-purple-400); }
   &:active { color: var(--clr-yellow-500); }
+}
+
+.promo-banner__bg-credit {
+  color: var(--clr-black-500);
+  font-size: 0.7rem;
+
+  position: absolute;
+  right: 12px;
+  bottom: 6px;
+}
+
+.promo-banner__bg-link {
+  color: var(--clr-purple);
 }
 
 
