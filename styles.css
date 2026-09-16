@@ -175,6 +175,7 @@
 
   position: sticky;
   top: 0;
+  z-index: 1;
 }
 
 .main-content > .dashboard,
@@ -192,7 +193,20 @@
   font-size: 1.2rem;
 }
 
+.link-more__wrapper {
+  background-color: var(--clr-white);
+  border: 1px solid var(--clr-grey-500);
+  border-radius: 8px;
+  box-shadow: 2px 2px 8px var(--clr-grey-500);
+
+  padding: 0.2rem 0.6rem;
+
+  display: flex;
+  align-items: center;
+}
+
 .link-more {
+  color: var(--clr-purple-500);
   font-size: 0.8rem;
 }
 
@@ -353,7 +367,7 @@
 
 .folder {
   background-color: var(--clr-white);
-  border-radius: 15px;
+  border-radius: 10px 35px;
 
   padding: 1rem;
 }
