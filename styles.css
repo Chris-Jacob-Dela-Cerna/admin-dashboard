@@ -167,13 +167,14 @@
 .main-content > .header {
   background-color: var(--clr-purple-100);
 
+  margin-bottom: 1rem;
   padding: 1.2rem 0 1rem 0;
-
-  position: sticky;
-  top: 0;
 
   display: flex;
   justify-content: space-between;
+
+  position: sticky;
+  top: 0;
 }
 
 .main-content > .dashboard,
@@ -247,10 +248,37 @@
 
 
 
+.dashboard > .upload-btn {
+  background-color: var(--clr-purple-500);
+  border: 1px solid var(--clr-grey-500);
+  border-radius: 25px;
+
+  padding: 0.4rem;
+
+  display: flex;
+  align-items: center;
+}
+
+.upload-btn__icon {
+  border: 1px solid var(--clr-white);
+  border-radius: 25px;
+
+  height: 1.4rem;
+  width: 1.4rem;
+}
+
+.upload-btn__text {
+  color: var(--clr-white);
+  font-size: 0.7rem;
+  font-weight: bold;
+
+  padding: 0 0.4rem;
+}
+
 .dashboard > .promo-banner {
   background-color: var(--clr-white);
   background-image: url(img/promo-banner--bg.jpg);
-  background-position: left -20% top 5%;
+  background-position: right -25% top 5%;
   background-repeat: repeat;
   border: 1px solid rgb(235, 235, 235);
   border-radius: 16px;
@@ -272,6 +300,7 @@
   max-width: 30ch;
 
   margin-top: 0.7rem;
+  padding-left: 0.3rem;
 }
 
 .promo-banner__btn {
