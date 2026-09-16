@@ -14,18 +14,18 @@
         <nav class="nav-sidebar">
           <!--  Logo  -->
           <img class="nav-sidebar__logo">
-          <div class="nav-sidebar__menu-container">
+          <div class="nav-sidebar__menu-wrapper">
             <!--  Main Menu   -->
             <section class="nav-sidebar__main-menu">
               <ul class="nav-sidebar__main-list">
                 <li class="nav-sidebar__item">
-                  <div class="nav-sidebar__link-wrapper current-link">
+                  <div class="nav-sidebar__link-container current-link">
                     <img class="nav-sidebar__icon">
                     <a href="#" class="nav-sidebar__link"> Dashboard </a>
                   </div>
                 </li>
                 <li class="nav-sidebar__item">
-                  <div class="nav-sidebar__link-wrapper">
+                  <div class="nav-sidebar__link-container">
                     <img class="nav-sidebar__icon">
                     <a href="#" class="nav-sidebar__link"> Storage </a>
                   </div>
@@ -42,25 +42,25 @@
                   </ul>
                 </li>
                 <li class="nav-sidebar__item">
-                  <div class="nav-sidebar__link-wrapper">
+                  <div class="nav-sidebar__link-container">
                     <img class="nav-sidebar__icon">
                     <a href="#" class="nav-sidebar__link"> Shared Files </a>
                   </div>
                 </li>
                 <li class="nav-sidebar__item">
-                  <div class="nav-sidebar__link-wrapper">
+                  <div class="nav-sidebar__link-container">
                     <img class="nav-sidebar__icon">
                     <a href="#" class="nav-sidebar__link"> Received Files </a>
                   </div>
                 </li>
                 <li class="nav-sidebar__item">
-                  <div class="nav-sidebar__link-wrapper">
+                  <div class="nav-sidebar__link-container">
                     <img class="nav-sidebar__icon">
                     <a href="#" class="nav-sidebar__link"> File Requests </a>
                   </div>
                 </li>
                 <li class="nav-sidebar__item">
-                  <div class="nav-sidebar__link-wrapper">
+                  <div class="nav-sidebar__link-container">
                     <img class="nav-sidebar__icon">
                     <a href="#" class="nav-sidebar__link"> Favorites </a>
                   </div>
@@ -72,19 +72,19 @@
             <section class="nav-sidebar__others-menu">
               <ul class="nav-sidebar__others-list">
                 <li class="nav-sidebar__item">
-                  <div class="nav-sidebar__link-wrapper">
+                  <div class="nav-sidebar__link-container">
                     <img class="nav-sidebar__icon">
                     <a href="#" class="nav-sidebar__link"> Help </a>
                   </div>
                 </li>
                 <li class="nav-sidebar__item">
-                  <div class="nav-sidebar__link-wrapper">
+                  <div class="nav-sidebar__link-container">
                     <img class="nav-sidebar__icon">
                     <a href="#" class="nav-sidebar__link"> Settings </a>
                   </div>
                 </li>
                 <li class="nav-sidebar__item">
-                  <div class="nav-sidebar__link-wrapper">
+                  <div class="nav-sidebar__link-container">
                     <img class="nav-sidebar__icon">
                     <a href="#" class="nav-sidebar__link"> Logout </a>
                   </div>
@@ -126,7 +126,7 @@
             </button>
             <div class="promo-banner">
               <h3 class="promo-banner__heading"> Welcome Back, John </h3>
-              <p class="promo-banner__text"> You're almost out of space. Upgrade to 500 GB and keep everything in one place. </p>
+              <p class="promo-banner__text"> You're almost out of space. Upgrade to 512 GB of cloud storage and keep everything in one place. </p>
               <button class="promo-banner__btn"> Upgrade </button>
               <p class="promo-banner__bg-credit"> Background by <a class="promo-banner__bg-link" href="https://unsplash.com/@vackground?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"> vackground.com </a> on <a class="promo-banner__bg-link" href="https://unsplash.com/photos/a-purple-and-white-abstract-background-with-hexagonal-shapes-7K1_uSnNoy4?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"> Unsplash </a></p>
             </div>
@@ -135,7 +135,7 @@
           <!--  Folders  -->
           <section class="folders">
             <h2 class="section-heading">Folders</h2>
-            <p class="link-more__wrapper">
+            <p class="link-more__container">
               <a class="link-more" href="#"> View All </a>
             </p>
             <div class="folders__wrapper">
@@ -217,7 +217,7 @@
           <!--  Recent Files  -->
           <section class="recent-files">
             <h2 class="section-heading"> Recent Files </h2>
-            <p class="link-more__wrapper">
+            <p class="link-more__container">
               <a class="link-more" href="#"> View All </a>
             </p>
             <table class="files-table">
@@ -307,7 +307,11 @@
           <!--  Storage  -->
           <div class="storage">
             <h2 class="storage__header"> Storage </h2>
-            <div class="storage__meter-wrapper"></div>
+            <div class="storage__meter-container">
+              <meter class="storage__meter" low="150" high="200" optimum="0" min="0" max="256" value="150.8">
+
+              </meter>
+            </div>
           </div>
           <!--  Storage Summary  -->
           <div class="summary">
@@ -318,7 +322,7 @@
                   <h3 class="summary__file-name"> Images </h3>
                   <p class="summary__file-count"> 9,127 files </p>
                 </div>
-                <p class="summary__file-size"> 32.4 GB </p>
+                <p class="summary__file-size"> 42.4 GB </p>
               </li>
               <li class="summary__item">
                 <img class="summary__icon">
