@@ -26,7 +26,7 @@
   --clr-grey-600: rgb(215, 215, 215);
   --clr-purple: rgb(100, 0, 255);
   --clr-purple-100: rgb(245, 245, 255);
-  --clr-purple-400: rgb(160, 140, 240);
+  --clr-purple-400: rgb(140, 120, 240);
   --clr-purple-500: rgb(120, 100, 240);
   --clr-white: rgb(255, 255, 255);
   --clr-yellow-600: rgb(240, 235, 25);
@@ -250,13 +250,18 @@
 
 .dashboard > .upload-btn {
   background-color: var(--clr-purple-500);
-  border: 1px solid var(--clr-grey-500);
+  border: 0;
   border-radius: 25px;
+  box-shadow: 3px 3px 8px var(--clr-grey-500);
+  color: var(--clr-white);
 
-  padding: 0.4rem;
+  padding: 0.5rem;
 
   display: flex;
   align-items: center;
+
+  &:active { color: var(--clr-yellow-600); }
+  &:hover { background-color: var(--clr-purple-400); }
 }
 
 .upload-btn__icon {
@@ -268,11 +273,11 @@
 }
 
 .upload-btn__text {
-  color: var(--clr-white);
   font-size: 0.7rem;
   font-weight: bold;
+  letter-spacing: 0.03rem;
 
-  padding: 0 0.4rem;
+  padding: 0 0.7rem;
 }
 
 .dashboard > .promo-banner {
