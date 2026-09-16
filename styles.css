@@ -269,6 +269,7 @@
   border-radius: 25px;
   box-shadow: 3px 3px 8px var(--clr-grey-500);
   color: var(--clr-white);
+  cursor: pointer;
 
   padding: 0.5rem;
 
@@ -288,7 +289,7 @@
 }
 
 .upload-btn__text {
-  font-size: 0.7rem;
+  font-size: 0.75rem;
   font-weight: bold;
   letter-spacing: 0.03rem;
 
@@ -328,6 +329,7 @@
   border: 0;
   border-radius: 12px;
   color: var(--clr-white);
+  cursor: pointer;
   font-size: 0.85rem;
   font-weight: bold;
 
@@ -368,7 +370,9 @@
 
 .folder {
   background-color: var(--clr-white);
+  border: 1px solid var(--clr-grey-500);
   border-radius: 10px 35px;
+  box-shadow: 2px 2px 8px var(--clr-grey-500);
   cursor: pointer;
 
   padding: 1rem;
@@ -555,7 +559,6 @@
 
 /*  Temporary  */
 
-.nav-sidebar__logo,
 .storage__meter-wrapper {
   border: 1px solid rgb(200, 200, 200);
 }
@@ -564,9 +567,4 @@
 .nav-bar,
 .summary__icon {
   border: 1px dashed rgb(167, 166, 166);
-}
-
-.folder {
-  border: 1px solid rgb(235, 235, 235);
-  box-shadow: 2px 2px 8px var(--clr-grey-500);
 }
