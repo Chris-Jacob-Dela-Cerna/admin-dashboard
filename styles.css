@@ -106,25 +106,19 @@
 }
 
 .nav-sidebar__icon {
-  height: 2rem;
-  width: 2rem;
+  height: 1.9rem;
+  width: 1.9rem;
 }
 
 .nav-sidebar__link {
-  padding-left: 0.8rem;
+  padding-left: 0.9rem;
 }
-
-
 
 .sub-menu {
   border-left: 2px solid var(--clr-grey-500);
 
-  margin-left: 1.6rem;
+  margin-left: 1.7rem;
   padding-left: 1rem;
-}
-
-.sub-menu__link {
-  padding-left: 0.15rem;
 }
 
 
@@ -143,6 +137,8 @@
 .sub-menu__link {
   color: var(--clr-black-300);
   font-size: 0.9rem;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 .current-link {
@@ -606,5 +602,5 @@
 
 .folder__icon-container,
 .summary__icon-container  {
-  border: 1px solid rgb(200, 200, 200);
+  border: 1px dashed rgb(200, 200, 200);
 }
