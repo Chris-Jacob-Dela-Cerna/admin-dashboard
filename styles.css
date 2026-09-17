@@ -141,7 +141,7 @@
 
 .nav-sidebar__link,
 .sub-menu__link {
-  color: var(--clr-black-500);
+  color: var(--clr-black-300);
   font-size: 0.9rem;
 }
 
@@ -299,7 +299,7 @@
 .dashboard > .promo-banner {
   background-color: var(--clr-white);
   background-image: url(img/promo-banner--bg.jpg);
-  background-position: right -25% top 5%;
+  background-position: right -25% top 4.5%;
   background-repeat: repeat;
   border: 1px solid rgb(235, 235, 235);
   border-radius: 16px;
@@ -376,6 +376,7 @@
   cursor: pointer;
 
   padding: 1rem;
+  padding-bottom: 1.6rem;
 }
 
 .folder__icons-wrapper {
@@ -496,7 +497,9 @@
 
 .storage__meter-container {
   background-color: var(--clr-purple-100);
-  border-radius: 10px;
+  border: 1px solid var(--clr-grey-600);
+  border-radius: 40px;
+  box-shadow: 1px 1px 2px var(--clr-grey-500);
   cursor: pointer;
 
   height: 4rem;
@@ -510,10 +513,10 @@
   letter-spacing: 0.03rem;
   text-align: center;
 
-  height: 1.5rem;
+  height: 1.3rem;
   width: 90%;
 
-  margin-top: 0.66rem;
+  margin-top: 0.8rem;
 
   &:after {
     content: attr(value) " GB / " attr(max) " GB";
@@ -535,6 +538,7 @@
 .summary__item {
   border: 1px solid var(--clr-grey-600);
   border-radius: 12px;
+  box-shadow: 1px 1px 1px var(--clr-grey-500);
   cursor: pointer;
 
   padding: 0.8rem 1rem;
@@ -589,11 +593,11 @@
 
 /*  Temporary  */
 
-.storage__meter-container {
+.stoage__meter-container {
   border: 1px solid rgb(200, 200, 200);
 }
 
-.search-bar,
+.search-bar__field,
 .nav-bar,
 .summary__icon {
   border: 1px dashed rgb(167, 166, 166);
