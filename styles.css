@@ -397,7 +397,7 @@
   align-items: center;
 }
 
-.folder__icon {
+.folder__icon-container {
   height: 1.8rem;
   width: 1.8rem;
 }
@@ -558,7 +558,7 @@
   align-items: center;
 }
 
-.summary__icon {
+.summary__icon-container {
   border-radius: 15px;
 
   height: 3rem;
@@ -604,10 +604,7 @@
 
 /*  Temporary  */
 
-.stoage__meter-container {
+.folder__icon-container,
+.summary__icon-container  {
   border: 1px solid rgb(200, 200, 200);
-}
-
-.summary__icon {
-  border: 1px dashed rgb(167, 166, 166);
 }
