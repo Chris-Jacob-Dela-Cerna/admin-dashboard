@@ -84,18 +84,20 @@
 
 /*  Navigation  */
 
-.nav-sidebar__logo {
-  height: 3.6rem;
-  width: 10rem;
+.nav-sidebar__orion-logo {
+  cursor: pointer;
+
+  height: 8rem;
+}
+
+.nav-sidebar__main-menu {
+  padding-bottom: 1rem;
 }
 
 .nav-sidebar__others-menu {
   border-top: 1px solid var(--clr-grey-500);
-}
 
-.nav-sidebar__main-menu, 
-.nav-sidebar__others-menu {
-  padding: 1rem 0;
+  padding-top: 1rem;
 }
 
 
