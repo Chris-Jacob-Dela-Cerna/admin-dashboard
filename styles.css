@@ -382,7 +382,7 @@
   box-shadow: 2px 2px 8px var(--clr-grey-500);
   cursor: pointer;
 
-  padding: 1rem;
+  padding: 1rem 0.6rem 1.6rem 1rem;
   padding-bottom: 1.6rem;
 }
 
@@ -394,8 +394,19 @@
 }
 
 .folder__icon-container {
-  height: 1.8rem;
-  width: 1.8rem;
+  background-color: var(--clr-purple-100);
+  border: 1px solid var(--clr-grey-500);
+  border-radius: 8px;
+
+  padding: 0.15rem;
+
+  height: 2rem;
+  width: 2rem;
+}
+
+.folder__icon {
+  height: 100%;
+  width: 100%;
 }
 
 .folder__options-icon {
@@ -407,10 +418,18 @@
 
 .folder__name {
   font-size: 0.9rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .folder__file-count {
   font-size: 0.75rem;
+}
+
+.folder__name,
+.folder__file-count {
+  padding-left: 0.1rem;
 }
 
 
@@ -600,7 +619,6 @@
 
 /*  Temporary  */
 
-.folder__icon-container,
 .summary__icon-container  {
   border: 1px dashed rgb(200, 200, 200);
 }
