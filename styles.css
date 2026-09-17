@@ -303,11 +303,10 @@
 }
 
 .upload-btn__icon {
-  border: 1px solid var(--clr-white);
   border-radius: 25px;
 
-  height: 1.4rem;
-  width: 1.4rem;
+  height: 1.6rem;
+  width: 1.6rem;
 }
 
 .upload-btn__text {
