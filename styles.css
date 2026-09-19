@@ -387,7 +387,7 @@
 
   display: grid;
   gap: 0.8rem;
-  grid-template-columns: repeat(auto-fit, 10rem);
+  grid-template-columns: repeat(auto-fit, minmax(9rem, 1fr));
 }
 
 .folder {
