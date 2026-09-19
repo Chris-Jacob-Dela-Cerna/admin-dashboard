@@ -20,6 +20,7 @@
 
 :root {
   --clr-black: rgb(0, 0, 0);
+  --clr-black-100: rgb(100, 100, 100);
   --clr-black-300: rgb(75, 75, 75);
   --clr-black-500: rgb(50, 50, 50);
   --clr-black-tinted: rgb(0, 0, 0, 0.5);
@@ -87,7 +88,7 @@
 .nav-sidebar__orion-logo {
   cursor: pointer;
 
-  height: 8rem;
+  width: 90%;
 }
 
 .nav-sidebar__main-menu {
@@ -448,10 +449,18 @@
 
 
 
-.recent-files > .files-table {
+.recent-files > .files-table__wrapper {
+  grid-column: 1 / 3;
+  overflow-x: auto;
+  scrollbar-color: var(--clr-black-100) var(--clr-purple-100);
+  scrollbar-width: thin;
+}
+
+.files-table {
   border: 0;
   border-collapse: collapse;
-  grid-column: 1 / 3;
+
+  width: 100%;
 }
 
 .files-table__cell {
@@ -642,8 +651,10 @@
 
 .summary__file-size {
   font-size: 0.85rem;
+  white-space: nowrap;
 
   margin-left: auto;
+  padding-left: 0.5rem;
 }
 
 
